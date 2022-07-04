@@ -14,7 +14,7 @@
 
 2. Run 
 ```
-npx tailwindcss init
+npm install -D tailwindcss
 ```
 3. Run
 ```
