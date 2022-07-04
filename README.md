@@ -20,3 +20,9 @@ npx tailwindcss init
 ```
 npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch
 ```
+
+## How to use `config` DB folder.
+Run
+```
+`config` DB folder
+```
