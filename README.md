@@ -1,12 +1,12 @@
 # bitoid-week6
 
-## Folder directorys
+## Folder directories
 
 `bitoid` theme folder comes from `web/themes/custom/`.
 
 `devjobs` module folder comes from `web/module/`.
 
-`config` DB folder comes from `root` directory.
+`config` DB folder comes from Drupal `root` directory.
 
 ## How to run Tailwindcss
 
