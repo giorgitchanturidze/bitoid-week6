@@ -1,0 +1,19 @@
+uuid: 89d10667-83b8-4293-9390-09376280ba65
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_job_description
+    - node.type.jobs
+id: node.jobs.field_job_description
+field_name: field_job_description
+entity_type: node
+bundle: jobs
+label: 'Job description'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

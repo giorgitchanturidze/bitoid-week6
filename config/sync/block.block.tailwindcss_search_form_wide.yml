@@ -1,0 +1,23 @@
+uuid: 524ed459-21d6-440e-96f1-62916d4bf66d
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - tailwindcss
+_core:
+  default_config_hash: imMyHD6LYci0gtXq56qr9ZKGHzbEG9uFydrN5EhKtSU
+id: tailwindcss_search_form_wide
+theme: tailwindcss
+region: secondary_menu
+weight: -5
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form (wide)'
+  label_display: '0'
+  provider: search
+  page_id: ''
+visibility: {  }

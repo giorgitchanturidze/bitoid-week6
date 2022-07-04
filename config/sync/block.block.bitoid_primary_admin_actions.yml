@@ -1,0 +1,20 @@
+uuid: 058ff8b8-dd12-4762-9ec7-3d5d9cb99b2f
+langcode: en
+status: true
+dependencies:
+  theme:
+    - bitoid
+_core:
+  default_config_hash: Q9_2whdOj1YIomfvsIfopROW4FT_X5pY0DjdOiOaQ5U
+id: bitoid_primary_admin_actions
+theme: bitoid
+region: highlighted
+weight: -5
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

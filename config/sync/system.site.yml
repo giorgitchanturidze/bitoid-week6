@@ -1,0 +1,14 @@
+_core:
+  default_config_hash: VDJxTZtQR21qB4lvOq8zszJZLvLKrSPQpdn2E3T71Ww
+langcode: en
+uuid: a5952ad0-9a98-4448-b9e0-886b4b894cdb
+name: Devjobs
+mail: chanturidzegiorgi31@gmail.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /jobinfo
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: en

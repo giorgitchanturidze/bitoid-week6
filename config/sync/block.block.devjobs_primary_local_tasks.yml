@@ -1,0 +1,22 @@
+uuid: 1363ec04-8aa3-4f05-a389-d9d321f6fedd
+langcode: en
+status: true
+dependencies:
+  theme:
+    - devjobs
+_core:
+  default_config_hash: nGE3EoPQQaQCuqTUtZgw0-KIzmrqdKDzdNQf2JyPUt4
+id: devjobs_primary_local_tasks
+theme: devjobs
+region: highlighted
+weight: -4
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Primary tabs'
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: false
+visibility: {  }

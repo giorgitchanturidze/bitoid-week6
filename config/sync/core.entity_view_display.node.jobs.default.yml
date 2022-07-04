@@ -1,0 +1,101 @@
+uuid: 2447c518-0ae6-48eb-b8ff-0604431c684a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.jobs.field_activity
+    - field.field.node.jobs.field_company_name
+    - field.field.node.jobs.field_job_description
+    - field.field.node.jobs.field_job_logo
+    - field.field.node.jobs.field_job_title
+    - field.field.node.jobs.field_job_type
+    - field.field.node.jobs.field_location
+    - field.field.node.jobs.field_requirements
+    - field.field.node.jobs.field_what_you_will_do
+    - node.type.jobs
+  module:
+    - image
+    - user
+id: node.jobs.default
+targetEntityType: node
+bundle: jobs
+mode: default
+content:
+  field_activity:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_company_name:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 104
+    region: content
+  field_job_description:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 108
+    region: content
+  field_job_logo:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  field_job_title:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 105
+    region: content
+  field_job_type:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 106
+    region: content
+  field_location:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 107
+    region: content
+  field_requirements:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 109
+    region: content
+  field_what_you_will_do:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 110
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

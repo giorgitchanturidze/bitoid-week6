@@ -1,0 +1,5 @@
+name: Dev Jobs
+type: module
+description: "Searching jobs"
+package: Sample
+core_version_requirement: ^8 || ^9

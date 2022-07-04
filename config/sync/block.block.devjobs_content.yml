@@ -1,0 +1,22 @@
+uuid: 83dc0127-faa7-40df-89fd-1c8ef47d7258
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - devjobs
+_core:
+  default_config_hash: erQSEZF2XUjNmgTl0uNRBzmg18ZGXwUcw2FhApoeuHk
+id: devjobs_content
+theme: devjobs
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

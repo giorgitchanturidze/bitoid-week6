@@ -1,0 +1,22 @@
+uuid: 7d749f29-e002-4f29-99b5-2574cf9fec2d
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - devjobs
+_core:
+  default_config_hash: VhBzWb7lMRtIOg9G7VSw_0uopi-7zXeHq4vXqqV1HFE
+id: devjobs_breadcrumbs
+theme: devjobs
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

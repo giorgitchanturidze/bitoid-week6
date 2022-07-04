@@ -1,0 +1,22 @@
+uuid: cbb604cc-4ba2-4373-a259-0444e75c5d23
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - bitoid
+_core:
+  default_config_hash: VfPFqqxfkomud5CO8DUijw85QIl9GIxh_nIxLOYESxg
+id: bitoid_help
+theme: bitoid
+region: sidebar_first
+weight: 0
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

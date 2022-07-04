@@ -1,0 +1,22 @@
+uuid: 9c5bad3a-3d48-434b-9b55-99acc7d7b219
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - bitoid
+_core:
+  default_config_hash: erQSEZF2XUjNmgTl0uNRBzmg18ZGXwUcw2FhApoeuHk
+id: bitoid_content
+theme: bitoid
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

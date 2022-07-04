@@ -1,0 +1,22 @@
+uuid: 75597a0b-33d6-4873-b34a-dca2a0371fe9
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - bitoid
+_core:
+  default_config_hash: VhBzWb7lMRtIOg9G7VSw_0uopi-7zXeHq4vXqqV1HFE
+id: bitoid_breadcrumbs
+theme: bitoid
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  label_display: '0'
+  provider: system
+visibility: {  }

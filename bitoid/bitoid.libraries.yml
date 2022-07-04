@@ -1,0 +1,6 @@
+global-styling:
+  css:
+    theme:
+      dist/output.css: {}
+  js:
+    ./app.js: {}

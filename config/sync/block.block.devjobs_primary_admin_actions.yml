@@ -1,0 +1,20 @@
+uuid: 01e35e4f-551f-40e3-b626-52495f7c3145
+langcode: en
+status: true
+dependencies:
+  theme:
+    - devjobs
+_core:
+  default_config_hash: Q9_2whdOj1YIomfvsIfopROW4FT_X5pY0DjdOiOaQ5U
+id: devjobs_primary_admin_actions
+theme: devjobs
+region: highlighted
+weight: -5
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

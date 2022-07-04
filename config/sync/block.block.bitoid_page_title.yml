@@ -1,0 +1,20 @@
+uuid: 5ebc7d35-b146-48e9-a063-c36b6b69c64b
+langcode: en
+status: true
+dependencies:
+  theme:
+    - bitoid
+_core:
+  default_config_hash: 6aOgWsNTXjqrDm98TXSAjP6qd2nCijD1xw45MrnbK-Y
+id: bitoid_page_title
+theme: bitoid
+region: sidebar_first
+weight: -5
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

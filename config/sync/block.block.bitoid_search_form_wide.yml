@@ -1,0 +1,23 @@
+uuid: 5e21d41d-c4e8-4036-a5fe-81b4d4ec44f1
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - bitoid
+_core:
+  default_config_hash: imMyHD6LYci0gtXq56qr9ZKGHzbEG9uFydrN5EhKtSU
+id: bitoid_search_form_wide
+theme: bitoid
+region: secondary_menu
+weight: -5
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form (wide)'
+  label_display: '0'
+  provider: search
+  page_id: ''
+visibility: {  }

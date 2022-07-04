@@ -1,0 +1,22 @@
+uuid: 75b64954-5164-4149-b3cc-f3eb4267666a
+langcode: en
+status: true
+dependencies:
+  theme:
+    - bitoid
+_core:
+  default_config_hash: nGE3EoPQQaQCuqTUtZgw0-KIzmrqdKDzdNQf2JyPUt4
+id: bitoid_primary_local_tasks
+theme: bitoid
+region: highlighted
+weight: -4
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Primary tabs'
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: false
+visibility: {  }

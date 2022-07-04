@@ -1,0 +1,19 @@
+uuid: 8c1a8b6c-1b70-40c5-ad7a-9126036742bf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_activity
+    - node.type.jobs
+id: node.jobs.field_activity
+field_name: field_activity
+entity_type: node
+bundle: jobs
+label: Activity
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

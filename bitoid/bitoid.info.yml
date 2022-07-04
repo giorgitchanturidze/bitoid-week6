@@ -1,0 +1,8 @@
+name: bitoid
+description: bitoid project.
+core: 8.x
+core_version_requirement: ^8 || ^9
+type: theme
+base theme: stable
+libraries:
+  - bitoid/global-styling

@@ -1,0 +1,112 @@
+<!-- Let's output the three variables passed to this template -->
+
+<form method="post" action="">
+  <div class="relative inset-x-0 w-3/5 mx-auto -mt-8 ">
+    <!-- Job search -->
+    <div class="grid grid-cols-3  gap-0.5 ">
+      <label for="default-search"
+             class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-gray-300">Search</label>
+      <div class="relative">
+        <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
+          <svg width=" 24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M16.024 15.0588H17.1123L23.9435 21.9037L21.9037 23.9435L15.0588 17.1123V16.0308L14.6824 15.6544C13.1286 16.9891 11.1093 17.7968 8.89842 17.7968C3.98374 17.7968 0 13.8131 0 8.89842C0 3.98374 3.98381 0 8.89842 0C13.813 0 17.7968 3.98374 17.7968 8.89842C17.7968 11.1093 16.9891 13.1286 15.6475 14.6824L16.024 15.0588ZM2.73799 8.89842C2.73799 12.3003 5.49651 15.0588 8.89842 15.0588C12.3003 15.0588 15.0588 12.3003 15.0588 8.89842C15.0588 5.49651 12.3003 2.73799 8.89842 2.73799C5.49651 2.73799 2.73799 5.49651 2.73799 8.89842Z"
+                  fill="#5964E0" />
+          </svg>
+        </div>
+        <input type="search" name="title"
+               class="block p-4 pl-10 w-full text-sm rounded-l-lg border text-very_dark bg-white border-white focus:outline-none focus:ring-blue-500 focus:border-blue-500 dark:bg-dark dark:border-dark dark:placeholder-grey dark:text-white"
+               placeholder="Enter desired job..." >
+      </div>
+      <!-- Location -->
+      <label for="default-search"
+             class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-gray-300">Search</label>
+      <div class="relative">
+        <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
+          <svg width="17" height="24" viewBox="0 0 17 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M8.4477 0C10.6804 0 12.7796 0.870546 14.3585 2.45105C17.2803 5.37556 17.6434 10.8781 15.1348 14.2255L8.4477 23.894L1.75057 14.2119C-0.747997 10.8781 -0.384894 5.37556 2.53693 2.45105C4.11575 0.870546 6.21459 0 8.4477 0ZM5.47357 8.29091C5.47357 9.97484 6.84272 11.3455 8.52485 11.3455C10.207 11.3455 11.5761 9.97484 11.5761 8.29091C11.5761 6.60698 10.207 5.23636 8.52485 5.23636C6.84272 5.23636 5.47357 6.60698 5.47357 8.29091Z"
+                  fill="#5964E0" />
+          </svg>
+        </div>
+        <input type="search" id="default-search" name="location"
+               class="block p-4 pl-10 w-full text-sm border text-very_dark bg-white border-white focus:outline-none focus:ring-blue-500 focus:border-blue-500 dark:bg-dark dark:border-dark dark:placeholder-grey dark:text-white"
+               placeholder="Filter by location..." >
+      </div>
+      <!-- checkbox -->
+      <label for="default-search2"
+             class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-gray-300">Search</label>
+      <div class="relative">
+        <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
+          <input id="default-checkbox" type="checkbox" value="Full Time" name="checkbox"
+                 class="w-4 h-4 accent-violet  text-violet bg-gray-100 rounded border-violet focus:outline-none focus:ring-violet dark:focus:ring-violet dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+        </div>
+        <label for="default-checkbox"
+               class="block p-4 pl-10 rounded-r-lg text-sm border text-very_dark bg-white border-white focus:outline-none focus:ring-blue-500 focus:border-blue-500 dark:bg-dark dark:border-dark dark:placeholder-grey dark:text-white">Full Time Only</label>
+        <button type="submit" name="submit"
+                class="bg-violet hover:bg-light_violet text-white absolute right-2.5 bottom-2.5  focus:ring-4 focus:outline-none font-medium rounded-lg text-sm px-4 py-2 dark:bg-violet dark:hover:bg-light_violet">Search</button>
+      </div>
+    </div>
+  </div>
+</form>
+
+
+
+<div class="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1">
+  {% for job in jobs %}
+
+
+  <div
+
+    class="  relative max-w-md mx-10 md:max-w-sm min-w-0 break-words bg-white dark:bg-very_dark w-full mb-6 shadow-lg rounded-xl mt-16">
+    <div class="px-6">
+
+      <div class="flex flex-wrap justify-start">
+
+        <!-- image -->
+        <div class=" w-full flex justify-start">
+          <div class=" relative">
+            <a href="/node/{{ job.nid }}">
+            <img src="{{ job.thumbnail }}" class=" align-middle border-none absolute -m-6 -ml-1 lg:-ml-1 max-w-[150px]"  alt="Company logo">
+              <span class="animate-ping absolute bottom-4 rounded-full h-2 w-2 bg-[#16a34a]"></span>
+            </a>
+          </div>
+        </div>
+        <div class="w-full mt-15">
+          <div class="flex justify-start lg:pt-4 pt-8 pb-0">
+            <div class=" p-3 text-start">
+              <!-- Active hours -->
+              <div class="animate-bounce text-sm text-slate-400">{{job.activity}}{{job.type}}</div>
+
+
+              <!-- name and company -->
+              <h3 class="text-2xl text-slate-700 dark:text-white font-bold leading-normal mb-1"><a href="http://drupal.docker.localhost:8000/node/{{ job.nid }}">{{ job.title }}</a></h3>
+              <div class="text-xs mt-0 mb-2 text-slate-400 font-bold">
+                <i class=" fas fa-map-marker-alt text-slate opacity-75"></i>{{ job.company }}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- bio -->
+    <div class="flex flex-wrap justify-center">
+      <div class="w-full px-8">
+        <p class="  font-light leading-relaxed text-violet mb-4">{{ job.location   }}</p>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+
+    </div>
+<div id="load" class="relative inset-x-0 w-max mx-auto pb-20">
+  <button onclick="myFunction()" class=" bg-violet hover:bg-light_violet animate-bounce text-center text-white py-2 px-4 rounded">Load More</button>
+
+  </div>
+  <div id="myDIV" class="relative inset-x-0 w-max mx-auto pb-20">
+      <button disabled class="inline-flex items-center bg-violet hover:bg-light_violet text-white py-2 px-4 rounded">
+        <svg class="inline w-4 h-4 mr-2 text-gray-200 animate-spin dark:text-gray-600 fill-blue-600" viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z" fill="currentColor"/>
+          <path d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z" fill="currentFill"/>
+        </svg>Processing...</button>
+  </div>

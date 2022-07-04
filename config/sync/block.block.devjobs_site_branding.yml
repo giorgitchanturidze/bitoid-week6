@@ -1,0 +1,25 @@
+uuid: b0f9d484-3201-493a-80dd-ec272f8af675
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - devjobs
+_core:
+  default_config_hash: n_nlgjggHVfQt2H__zvLOKB2YtjPDbQ5tHijF9LE1aM
+id: devjobs_site_branding
+theme: devjobs
+region: header
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: Devjobs
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: false
+visibility: {  }

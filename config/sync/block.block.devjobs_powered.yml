@@ -1,0 +1,22 @@
+uuid: 6525fb85-18d4-40d5-915b-9d610ce8640a
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - devjobs
+_core:
+  default_config_hash: eYL19CLDyinGTWYQfBD1DswWzglEotE_kHnHx3AxTXM
+id: devjobs_powered
+theme: devjobs
+region: sidebar_first
+weight: 0
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }
