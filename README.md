@@ -6,7 +6,7 @@
 
 `devjobs` module folder comes from `web/module/`.
 
-`config` DB folder comes from Drupal `root` directory.
+`config` DB folder comes from `root` directory.
 
 ## How to run Tailwindcss
 
