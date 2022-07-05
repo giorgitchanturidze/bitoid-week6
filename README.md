@@ -10,16 +10,14 @@
 
 ## How to run Tailwindcss
 
-1. Go to `bitoid` theme root directory `web/themes/custom/`.
-
-2. Run 
+Go to `bitoid` theme root directory `web/themes/custom/` and run: 
 ```
 npm install -D tailwindcss
 npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch
 ```
 
 ## How to use `config` DB folder.
-Run
+To sync pasted `config` folder run:
 ```
 drush cim
 ```
