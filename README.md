@@ -10,14 +10,11 @@
 
 ## How to run Tailwindcss
 
-1. Go to `bitoid` theme root directory.
+1. Go to `bitoid` theme root directory `web/themes/custom/`.
 
 2. Run 
 ```
 npm install -D tailwindcss
-```
-3. Run
-```
 npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch
 ```
 
